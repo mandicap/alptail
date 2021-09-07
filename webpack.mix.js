@@ -1,13 +1,15 @@
-const mix = require("laravel-mix");
-require("laravel-mix-jigsaw");
-require("laravel-mix-tailwind");
+let mix = require('laravel-mix');
+let tailwind = require('tailwindcss');
+let src = 'source/_assets';
+
+require('laravel-mix-jigsaw');
 
 mix.disableSuccessNotifications();
-mix.setPublicPath("source/assets/build");
+mix.setPublicPath('source/assets/build');
 
-mix
-  .jigsaw()
-  .js("source/_assets/js/main.js", "js")
-  .sass("source/_assets/sass/main.scss", "css")
-  .tailwind("./tailwind.config.js")
-  .version();
+mix.jigsaw()
+    .js(`${src}/js/main.js`, 'js')
+    .postCss(`${src}/css/tailwind.css`, 'css', [
+       tailwind('./tailwind.config.js')
+    ])
+    .version();
