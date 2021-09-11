@@ -8,8 +8,20 @@
 
   h1, h2, h3,
   h4, h5, h6 { @apply font-heading font-bold; }
+
+  pre { @apply my-4 rounded overflow-x-auto; }
 }
 
 @layer utilities {
   [x-cloak] { display: none !important; }
+
+  pre code.torchlight {
+    @apply block py-4 min-w-max;
+
+    & .line { @apply px-4; }
+
+    /* Push code from line numbers and summary caret indicators */
+    & .line-number,
+    & .summary-caret { @apply mr-4; }
+  }
 }

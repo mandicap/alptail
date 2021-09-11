@@ -10,6 +10,7 @@ mix.setPublicPath('source/assets/build');
 mix.jigsaw()
     .js(`${src}/js/main.js`, 'js')
     .postCss(`${src}/css/tailwind.css`, 'css', [
-       tailwind('./tailwind.config.js')
+        require('tailwindcss/nesting'),
+        tailwind('./tailwind.config.js')
     ])
     .version();
