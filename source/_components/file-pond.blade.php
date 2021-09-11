@@ -1,13 +1,6 @@
-{{-- See docs for Filepond: https://github.com/pqina/filepond --}}
-
-{{-- Note CDN imports in the master layout head and end of body. --}}
-
+<!-- See docs for Filepond: https://github.com/pqina/filepond -->
 <div
-    class=""
-    x-data="{
-        pond: null
-    }"
-
+    x-data="{ pond: null }"
     x-init="
         FilePond.registerPlugin(FilePondPluginFileValidateType);
         FilePond.registerPlugin(FilePondPluginFileValidateSize);
@@ -26,9 +19,6 @@
             $refs.filepond
         );
 
-        pond = filepond;
-    "
-
->
+        pond = filepond;">
     <input type="file" x-ref="filepond">
 </div>
