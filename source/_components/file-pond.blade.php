@@ -1,13 +1,12 @@
-{{-- See docs for Filepond: https://github.com/pqina/filepond --}}
-
-{{-- Note CDN imports in the master layout head and end of body. --}}
-
+---
+name: FilePond (Drag and Drop File Input)
+isPure: false
+---
+@extends('_layouts.component')
+@section('content')
+<!-- See docs for Filepond: https://github.com/pqina/filepond -->
 <div
-    class=""
-    x-data="{
-        pond: null
-    }"
-
+    x-data="{ pond: null }"
     x-init="
         FilePond.registerPlugin(FilePondPluginFileValidateType);
         FilePond.registerPlugin(FilePondPluginFileValidateSize);
@@ -26,9 +25,7 @@
             $refs.filepond
         );
 
-        pond = filepond;
-    "
-
->
+        pond = filepond;">
     <input type="file" x-ref="filepond">
 </div>
+@endsection
