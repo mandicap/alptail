@@ -25,3 +25,9 @@ isPure: false
     <input x-ref="input" name="date" class="rounded-r border border-gray-300 px-3 py-2 text-gray-700 w-full focus:outline-none focus:shadow-outline" value="22/12/2020" />
 </div>
 @endsection
+@push('styles')
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/litepicker/dist/css/style.css">
+@endpush
+@push('scripts')
+    <script src="https://cdn.jsdelivr.net/npm/litepicker/dist/js/main.js"></script>
+@endpush

@@ -27,9 +27,6 @@
     <!-- Tagify -->
     <link href="https://unpkg.com/@yaireo/tagify/dist/tagify.css" rel="stylesheet" type="text/css" />
 
-    <!-- Litepicker -->
-    <link src="https://cdn.jsdelivr.net/npm/litepicker/dist/css/style.css"/>
-
 </head><body>
     <div
         x-data="{ searchTerm: new URLSearchParams(location.search).get('open') || '' }"
@@ -67,8 +64,5 @@
     <!-- Tagify -->
     <script src="https://unpkg.com/@yaireo/tagify"></script>
     <script src="https://unpkg.com/@yaireo/tagify@3.1.0/dist/tagify.polyfills.min.js"></script>
-
-    <!-- Litepicker -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/litepicker/dist/js/main.js"></script>
 
 </body></html>
