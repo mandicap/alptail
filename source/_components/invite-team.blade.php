@@ -37,7 +37,7 @@ isPure: true
 
     <button @click="addEmail" class="self-end text-primary hover:underline focus:outline-none focus:shadow-outline rounded animate-pulse">+ Add new invite</button>
 
-    {{-- For demonstration purposes: --}}
+    <!-- For demonstration purposes: -->
     <div class="text-sm p-4 rounded bg-gray-200 text-gray-500 font-mono">
         <p>// Emails to send to your backend...</p>
         <p class="mt-1">[ <span x-text="filteredEmails"></span> ]</p>
