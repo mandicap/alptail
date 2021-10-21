@@ -24,9 +24,6 @@
 
     @stack('styles')
 
-    <!-- Tagify -->
-    <link href="https://unpkg.com/@yaireo/tagify/dist/tagify.css" rel="stylesheet" type="text/css" />
-
 </head><body>
     <div
         x-data="{ searchTerm: new URLSearchParams(location.search).get('open') || '' }"
@@ -56,8 +53,5 @@
     <script src="{{ mix('js/main.js', 'assets/build') }}"></script>
 
     @stack('scripts')
-    <!-- Tagify -->
-    <script src="https://unpkg.com/@yaireo/tagify"></script>
-    <script src="https://unpkg.com/@yaireo/tagify@3.1.0/dist/tagify.polyfills.min.js"></script>
 
 </body></html>
