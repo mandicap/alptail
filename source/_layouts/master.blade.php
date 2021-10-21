@@ -56,11 +56,6 @@
     <script src="{{ mix('js/main.js', 'assets/build') }}"></script>
 
     @stack('scripts')
-
-    <!-- Muuri -->
-    <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.0/dist/muuri.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
-
     <!-- Tagify -->
     <script src="https://unpkg.com/@yaireo/tagify"></script>
     <script src="https://unpkg.com/@yaireo/tagify@3.1.0/dist/tagify.polyfills.min.js"></script>
