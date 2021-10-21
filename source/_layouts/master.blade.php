@@ -22,20 +22,7 @@
     <link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Work+Sans:wght@700&display=swap">
     <link rel="stylesheet" href="{{ mix('css/tailwind.css', 'assets/build') }}">
 
-    {{--
-        TODO: Create separate pages, for pure Tailwind/Alpine components and
-        components using other libraries, to use Blade Stacks.
-    --}}
-    <!-- FilePond -->
-    <link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet">
-    <link href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css" rel="stylesheet">
-    <link href="https://unpkg.com/filepond-plugin-file-poster/dist/filepond-plugin-file-poster.css" rel="stylesheet">
-
-    <!-- Tagify -->
-    <link href="https://unpkg.com/@yaireo/tagify/dist/tagify.css" rel="stylesheet" type="text/css" />
-
-    <!-- Litepicker -->
-    <link src="https://cdn.jsdelivr.net/npm/litepicker/dist/css/style.css"/>
+    @stack('styles')
 
 </head><body>
     <div
@@ -65,22 +52,6 @@
 
     <script src="{{ mix('js/main.js', 'assets/build') }}"></script>
 
-    <!-- Filepond -->
-    <script src="https://unpkg.com/filepond-plugin-file-poster/dist/filepond-plugin-file-poster.js"></script>
-    <script src="https://unpkg.com/filepond-plugin-file-validate-type/dist/filepond-plugin-file-validate-type.js"></script>
-    <script src="https://unpkg.com/filepond-plugin-file-validate-size/dist/filepond-plugin-file-validate-size.js"></script>
-    <script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
-    <script src="https://unpkg.com/filepond/dist/filepond.js"></script>
-
-    <!-- Muuri -->
-    <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.0/dist/muuri.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
-
-    <!-- Tagify -->
-    <script src="https://unpkg.com/@yaireo/tagify"></script>
-    <script src="https://unpkg.com/@yaireo/tagify@3.1.0/dist/tagify.polyfills.min.js"></script>
-
-    <!-- Litepicker -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/litepicker/dist/js/main.js"></script>
+    @stack('scripts')
 
 </body></html>

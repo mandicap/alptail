@@ -9,3 +9,10 @@ isPure: false
     <input x-ref="tag-input" placeholder="Add tags...">
 </div>
 @endsection
+@push('styles')
+    <link rel="stylesheet" href="https://unpkg.com/@yaireo/tagify/dist/tagify.css">
+@endpush
+@push('scripts')
+    <script src="https://unpkg.com/@yaireo/tagify"></script>
+    <script src="https://unpkg.com/@yaireo/tagify@3.1.0/dist/tagify.polyfills.min.js"></script>
+@endpush

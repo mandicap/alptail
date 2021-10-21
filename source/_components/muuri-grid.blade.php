@@ -75,3 +75,7 @@ isPure: false
     </ul>
 </div>
 @endsection
+@push('scripts')
+    <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.0/dist/muuri.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+@endpush
